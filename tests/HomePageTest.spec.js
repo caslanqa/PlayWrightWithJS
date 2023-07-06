@@ -2,9 +2,12 @@
     test -> test bloğu oluşturmak için gerekli
     expect -> validation yapabilmek için gerekli
     bu dosyaları node_modules içinde ki @playwright/test modulünden import ediyoruz
+    2 yöntem var
+     1 -> require
+     2 -> import
 */
-const {test,expect} = require('@playwright/test')
-
+//const {test,expect} = require('@playwright/test')
+import {test,expect} from '@playwright/test';
 test('Home Page',async ({page})=>{
     /* {page} arg kullanımı zorunludur
         bu sayede metodlara ulaşılır(bir nevi driver dır)
