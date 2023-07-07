@@ -10,7 +10,7 @@ page.getByTestId() to locate an element based on its data-testid attribute (othe
 */
 import {test,expect} from '@playwright/test';
 
-test('Locating Multiple Web Elements', async ({page})=>{
+test('Locating Web Element with builtin methods', async ({page})=>{
 
     await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');
 

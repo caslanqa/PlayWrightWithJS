@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('test', async ({ page }) => {
+test('CodeGen Test Generator', async ({ page }) => {
   await page.goto('https://demoblaze.com/');
   await page.getByRole('link', { name: 'Log in' }).click();
 

@@ -8,7 +8,7 @@
 */
 //const {test,expect} = require('@playwright/test')
 import {test,expect} from '@playwright/test';
-test('Home Page',async ({page})=>{
+test('Basic Test',async ({page})=>{
     /* {page} arg kullanımı zorunludur
         bu sayede metodlara ulaşılır(bir nevi driver dır)
         page objesi ilgili web application için bir nevi nesne oluşturur
