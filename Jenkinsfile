@@ -7,7 +7,6 @@ pipeline {
    stages {
       stage('e2e-tests') {
          steps {
-            sh 'ci'
             sh 'sh runapitest.sh apitest'
          }
       }
