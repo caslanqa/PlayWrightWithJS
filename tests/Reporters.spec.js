@@ -1,9 +1,11 @@
 import { test, expect } from '@playwright/test';
-test('Handle Checkboxes', async ({ page }) => {
+
+test('Reporters', async ({ page }) => {
     
     await page.goto('https://www.google.com');
 
     await expect(page).toHaveTitle("Google");
+
     /*
      * Built-in Reporters:
         * İlgili reporter'ı çağırmak için 'playwright.config.js' dosyasının içine aşağıdaki gibi attribute ekliyoruz.
@@ -22,7 +24,6 @@ test('Handle Checkboxes', async ({ page }) => {
             * ['junit', { outputFile: 'results.xml' }]
      
      * Custom Reports:
-        Bu konu ve tüm detaylar için https://playwright.dev/docs/test-reporters
-
+        Bu konu ve tüm detaylar için "https://playwright.dev/docs/test-reporters"
      */
 });
