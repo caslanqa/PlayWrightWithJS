@@ -1,4 +1,4 @@
-#! /usr/bin/bash
+#!/bin/bash
 
 npm init playwright@latest
 
@@ -21,7 +21,3 @@ npx playwright test API_TEST/$1.spec.js --project=chromium --headed
 wait
 
 allure generate allure-results -o allure-report --clean
-
-wait
-
-allure open allure-report
