@@ -16,7 +16,7 @@ npm install -g allure-commandline --save-dev
 
 wait
 
-npx playwright test API_TEST/$1.spec.js --project=chromium --headed
+npx playwright test API_TEST/$1.spec.js --project=chromium --headed --reporter=allure-playwright
 
 wait
 
