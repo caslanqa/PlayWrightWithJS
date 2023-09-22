@@ -8,4 +8,23 @@ npm i -D @playwright/test
 
 wait
 
-npx playwright test API_TEST/$1.spec.js
+npm i allure-playwright
+
+wait
+
+npm install -g allure-commandline --save-dev
+
+wait
+
+npx playwright test API_TEST/$1.spec.js --project=chromium --reporter=allure-playwright
+
+wait
+
+allure generate allure-results -o allure-report --clean
+
+wait
+cd /Users/cihanaslan/.jenkins/workspace/playwrighttest/
+
+wait
+
+tar cvf allure-report.tar allure-report/*
