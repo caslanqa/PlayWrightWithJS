@@ -1,5 +1,8 @@
 #!/bin/bash
 
+
+sudo apt-get install zip -y
+wait
 npm init playwright@latest
 
 wait
@@ -23,8 +26,9 @@ wait
 allure generate allure-results -o allure-report --clean
 
 wait
+
 cd /Users/cihanaslan/.jenkins/workspace/playwrighttest/
 
 wait
 
-tar cvf allure-report.tar allure-report/*
+zip -r allure-report.zip allure-report/*
