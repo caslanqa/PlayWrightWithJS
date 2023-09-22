@@ -31,4 +31,4 @@ cd /Users/cihanaslan/.jenkins/workspace/playwrighttest/
 
 wait
 
-tar cvf allureReport.tar allure-report/*
+zip -r test-results/allureReport.zip allure-report/*
