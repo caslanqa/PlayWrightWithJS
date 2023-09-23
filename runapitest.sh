@@ -26,3 +26,7 @@ cd /Users/cihanaslan/.jenkins/workspace/playwrighttest/
 wait
 
 zip -r test-results/allureReport.zip allure-report/*
+
+wait
+
+mv test-results/allureReport.zip test-results/allureReport.log
