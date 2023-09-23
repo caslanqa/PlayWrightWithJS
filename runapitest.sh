@@ -2,20 +2,14 @@
 
 
 sudo apt-get install zip -y
+
 wait
+
 npm init playwright@latest
 
 wait
 
 npm i -D @playwright/test
-
-wait
-
-npm i allure-playwright
-
-wait
-
-npm install -g allure-commandline --save-dev
 
 wait
 
