@@ -1,5 +1,7 @@
 #!/bin/bash
+rm -r allure-report | rm -r allure-results | rm -r test-results/*.*
 
+wait
 
 sudo apt-get install zip -y
 
