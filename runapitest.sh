@@ -13,7 +13,7 @@ npm i -D @playwright/test
 
 wait
 
-npx playwright test API_TEST/$1.spec.js --project=chromium --reporter=allure-playwright
+npx playwright test API_TEST/$1.spec.js
 
 wait
 
