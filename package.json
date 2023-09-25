@@ -8,7 +8,7 @@
   "author": "Cihan Aslan",
   "license": "ISC",
   "devDependencies": {
-    "@playwright/test": "^1.38.0",
+    "@playwright/test": "^1.38.1",
     "@types/node": "^20.6.2",
     "allure-playwright": "^2.8.1"
   }
